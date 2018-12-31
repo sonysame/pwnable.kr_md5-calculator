@@ -1,5 +1,7 @@
 # pwnable.kr_md5-calculator
-pwnable
+\#pwnable
+\#canary_leaked_by_the_same_seed
+\#buffer_overflow_caused_by_base64encoding
 
 ###main function
 ```cpp
