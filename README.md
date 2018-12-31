@@ -77,6 +77,7 @@ unsigned int process_hash()
 
 Firstly, we have to know how the base64 encoding works, then we can find a buffer overflow vulnerability.
 ![base64encoding](https://i.stack.imgur.com/asR79.png  "base64encoding")
+
 3bytes(24bits) are encoded to 4 Base64 data(32bits) that only contain 64 different ASCII characters(0-9A-Za-z+/). If there are only two or one byte left, padding(=) is added.
 
 Therefore, after Base64 decoding, 4bytes are shortend to 3bytes approximately.
