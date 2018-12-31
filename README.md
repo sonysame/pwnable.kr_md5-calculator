@@ -84,7 +84,7 @@ Therefore, after Base64 decoding, 4bytes are shortend to 3bytes approximately.
 
 We get the input and store it to the variable g_buf which is in bss area.
 Next, g_buf is decoded as Base64 and stored in the variable v3 which is in stack area.
-The varible v3 only takes 0x200 bytes. However, the maximum of g_buf is 1024bytes, so the maximum of the data that will be stored in v3 is 1024/4*3=768bytes. And here is the vurnabilty!
+The varible v3 only takes 0x200 bytes. However, the maximum of g_buf is 1024bytes, so the maximum of the data that will be stored in v3 is 1024/4*3=768bytes. And here is the vulnerabilty!
 
 We have the address of system function, so we can get the shell by using stack overflow and the system address.
 
