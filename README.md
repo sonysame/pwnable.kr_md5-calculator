@@ -1,7 +1,7 @@
 # pwnable.kr_md5-calculator
 pwnable
 
-####main function
+###main function
 ```cpp
 int __cdecl main(int argc, const char **argv, const char **envp)
 {
@@ -30,7 +30,7 @@ int __cdecl main(int argc, const char **argv, const char **envp)
   return 0;
 }
 ```
-####my_hash function
+###my_hash function
 ```cpp
 int my_hash()
 {
@@ -51,7 +51,7 @@ int my_hash()
   return v6 - v8 + v9 + v10 + v4 - v5 + v3 + v7;
 }
 ```
-####process_hash function
+###process_hash function
 ```cpp
 unsigned int process_hash()
 {
